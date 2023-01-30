@@ -1,0 +1,243 @@
+/*Lisa Moody HTML DSA Individual Task
+
+/*Video position*/
+#hero {
+    position: relative;
+}
+
+/*Video styling*/
+#hero video {
+    height: 100vh;
+    width: 100%;
+    background-position: absolute;
+    z-index: 10;
+    object-fit: cover;
+}
+
+#hero .content {
+    background: rgba(0, 0, 0.0.1);
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    /*Content will be above the video*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* nav bar decoration*/
+.nav {
+    background-image: linear-gradient(black, gray, aqua);
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white !important;
+    margin-left: 100px;
+    text-shadow: 3px 3px 5px gray;
+    font-family: cursive;
+}
+
+.nav a {
+    margin-right: 30px;
+    color: white !important;
+}
+
+.nav a:hover {
+    border-bottom: 2px solid black;
+}
+
+.active a {
+    border-bottom: 2px solid white;
+}
+
+/*header 1 styling*/
+#hero .content h1 {
+    color: aquamarine;
+    font-weight: 600;
+    font-family: cursive;
+    text-shadow: 5px 8px rgba(5, 5, 5, 0.6);
+    font-style: italic;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 50px;
+}
+
+/*Header 2 styling */
+#hero .content h2{
+    color: aquamarine;
+    /* font-weight: 300; */
+    font-family: cursive;
+    text-shadow: 2px 3px rgba(5, 5, 5, 0.6);
+    font-style: italic;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 45px;
+}
+
+/*header 3 styling*/
+#hero .content h3{
+    color: aquamarine;
+    /* font-weight: 300; */
+    font-family: cursive;
+    text-shadow: 2px 3px rgba(5, 5, 5, 0.6);
+    font-style: italic;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 30px;
+}
+
+/*paragraph styling*/
+#hero .content p {
+    color: aquamarine;
+    font-weight: 200;
+    font-family: cursive;
+    font-size: 28px;
+    font-style: italic;
+    -webkit-text-stroke-width: 0.80px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 3px rgba(5, 5, 5, 0.6);
+}
+
+/*Quote font styling*/
+#hero .content .p1{
+    color: aqua;
+    font-weight: 200;
+    font-family: cursive;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/*Styling for quote button*/
+.container .btn-info{
+    color:white;
+    font-family: cursive;
+    font-size: 20px;
+    font-style:italic;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    background: linear-gradient(aqua, black);
+    transition: .8s;
+}
+
+/*Mouse hovers over quote buttons*/
+.container .btn-info:hover {
+    background: gray;
+    color:aqua;
+    transition: .5s;
+}
+
+
+/*Styling for explore and choose city button*/
+.btn{
+    background: linear-gradient(aqua, black);
+    transition: .8s;
+}
+
+/*Mouse hovers over page buttons*/
+.btn:hover {
+    background: gray;
+    color:aqua;
+    transition: .5s;
+}
+
+/*Quote font*/
+.quote{
+    color: aquamarine;
+    font-size: 20px;
+    font-style:italic;
+    font-family: cursive;
+
+}
+
+#demo .bnt-info{
+    color: white;
+}
+
+
+/* search button*/
+.text a {
+    display: inline-block;
+    font-size: 4em;
+    background: white;
+    padding: 10px, 30px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+/* social media icons*/
+.social {
+    position: absolute;
+    bottom: 60px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li {
+    list-style: none;
+    /* gets rid of bullet points*/
+}
+
+.social li a {
+    display: inline-block;
+    filter: invert(1);
+    margin-right: 20px;
+    transform: scale(0.7);
+    transition: 0.5s;
+}
+
+.social li a:hover {
+    transform: scale(0.5) translateY(-15px);
+    /* moves it on the y axis*/
+}
+
+/* Menu styling */
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu ul {
+    position: relative;
+    list-style: none;
+}
+
+.menu ul li a {
+    font-size: 23px;
+    color: #111;
+}
+
+.menu ul li a:hover {
+    color: turquoise;
+}
+
+/*If the screen is made smaller*/
+@media(max-width: 700px) {
+
+    .showcase,
+    .showcase header {
+        padding: 40px;
+    }
+
+    .text h2 {
+        font-size: 3em;
+    }
+
+    .text h3 {
+        font-size: 2em;
+    }
+}
